@@ -1,24 +1,5 @@
-<input type="text" name="" id="" [(ngModel)]="title">
-{{title}}
-
-
-<div *ngIf="title === 'jose'">
-  <h1>El mejor </h1>
-</div>
-
-<button (click)="addItem()" > Add </button>
-<ul>
-  <li *ngIf="items.length === 0"> La lista esta vacia </li>
-    <li *ngFor="let nombre of items ; index as i">
-      {{nombre}} {{i}}
-      <button (click)="deleteItems(i)" > Delete Items </button>
-    </li>
-</ul>
+<router-outlet> </router-outlet>
 
 
 
-<div *ngFor="let product of products">
-  <app-product [product]="product" (prductClicker)="clickProduct($event)"> </app-product>
-
-</div>
 

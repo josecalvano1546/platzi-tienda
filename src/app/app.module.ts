@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {ProductComponent} from './components/product.component';
+import {ProductoComponent} from './components/product.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,14 +9,20 @@ import { from } from 'rxjs';
 import { CartComponent } from './cart/cart.component';
 import { ExponencialPipe } from './exponencial.pipe';
 import { HigthligthDirective } from './higthligth.directive';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProductComponent} from './product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
+    ProductoComponent,
     CartComponent,
     ExponencialPipe,
     HigthligthDirective,
+    HomeComponent,
+    ContactComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
