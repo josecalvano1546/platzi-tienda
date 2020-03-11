@@ -8,13 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tienda';
-  items=['jose', 'nicolas' , 'Hola Mundo'];
- 
-  addItem(){
-    this.items.push('nuevoItem')
-  }
-  deleteItems(index: number){
-    this.items.splice(index,1);
-  }
  
 }
