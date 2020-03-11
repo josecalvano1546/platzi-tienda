@@ -12,6 +12,9 @@ import { HigthligthDirective } from './higthligth.directive';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductComponent} from './product/product.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { ProductComponent} from './product/product.component';
     HomeComponent,
     ContactComponent,
     ProductComponent,
+    HeaderComponent,
+    FooterComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule,
