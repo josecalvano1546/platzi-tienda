@@ -6,11 +6,17 @@ import {ProductComponent} from './components/product.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { from } from 'rxjs';
+import { CartComponent } from './cart/cart.component';
+import { ExponencialPipe } from './exponencial.pipe';
+import { HigthligthDirective } from './higthligth.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
+    CartComponent,
+    ExponencialPipe,
+    HigthligthDirective,
   ],
   imports: [
     BrowserModule,
