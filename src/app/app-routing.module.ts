@@ -5,26 +5,40 @@ import {ProductComponent} from './product/product.component';
 import {ContactComponent} from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LayoutComponent } from './layout/layout.component';
 
 
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: HomeComponent,
+    path: '',
+    component: LayoutComponent, 
+
+    children: [
+      {
+        path: '',
+        redirectTo:'/home',
+        pathMatch:'full',
+      },
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
+      {
+        path: 'product',
+        component: ProductComponent,
+      },
+      {
+        path: 'product/:id',
+        component: ProductDetailComponent,
+      },
+      {
+        path: 'contact',
+        component: ContactComponent,
+      },
+    ]
   },
-  {
-    path: 'product',
-    component: ProductComponent,
-  },
-  {
-    path: 'product/:id',
-    component: ProductDetailComponent,
-  },
-  {
-    path: 'contact',
-    component: ContactComponent,
-  },
+ 
   {
     path: '**',
     component: PageNotFoundComponent,

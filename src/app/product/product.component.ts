@@ -15,7 +15,7 @@ export class ProductComponent implements OnInit {
     console.log(id)
   };
   
-productos: Product[] = [];
+  productos: Product[] = [];
   
   constructor(private productsService: ProductsService) { }
 
