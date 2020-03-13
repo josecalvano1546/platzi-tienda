@@ -9,12 +9,12 @@ import { from } from 'rxjs';
 import { CartComponent } from './cart/cart.component';
 import { ExponencialPipe } from './exponencial.pipe';
 import { HigthligthDirective } from './higthligth.directive';
-import { HomeComponent } from './home/home.component';
+
 import { ContactComponent } from './contact/contact.component';
 import { ProductComponent} from './product/product.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { BannerComponent } from './banner/banner.component';
+
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -26,12 +26,11 @@ import { LayoutComponent } from './layout/layout.component';
     CartComponent,
     ExponencialPipe,
     HigthligthDirective,
-    HomeComponent,
+   
     ContactComponent,
     ProductComponent,
     HeaderComponent,
     FooterComponent,
-    BannerComponent,
     PageNotFoundComponent,
     ProductDetailComponent,
     LayoutComponent,
