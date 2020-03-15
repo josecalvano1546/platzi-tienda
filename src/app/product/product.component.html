@@ -1,6 +1,22 @@
-
-
-<div *ngFor="let producto of productos">
-  <app-producto [product]="producto"  (prductClicker)="clickProduct($event)"> </app-producto>
-
+<div class="container">
+  
+ 
+    <div class="card-deck">
+      <div *ngFor="let producto of productos" class="col-4">
+            <app-producto 
+              [product]="producto"  
+              (prductClicker)="clickProduct($event)"> 
+            </app-producto>
+      </div>
+        
+    </div>
+  
+ 
+  
+  
 </div>
+
+
+
+
+  

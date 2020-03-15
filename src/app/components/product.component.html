@@ -1,7 +1,15 @@
 
-<h3 appHigthligth> {{product.title  }} </h3>
-<img [src]="product.image" alt="">
-<p>{{product.description | slice: 0:10}}</p>
-<strong> price {{product.price | currency }}</strong>
-<button (click)="addCarr()">Agregar Carrito</button>
-<a [routerLink]="['/product' , product.id]">Ver descripcion</a>
+    <div class="card h-100">
+    <img [src]="product.image" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">{{product.description | slice: 0:30}}</p>
+        <p class="card-text" > price {{product.price | currency }}</p>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary" (click)="addCarr()">Agregar Carrito</button>
+        <a class="btn btn-primary" [routerLink]="['/product' , product.id]">Ver descripcion</a>
+      </div>
+
+</div>
+
