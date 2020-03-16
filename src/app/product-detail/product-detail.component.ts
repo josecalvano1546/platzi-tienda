@@ -20,10 +20,29 @@ export class ProductDetailComponent implements OnInit {
     this.rout.params.subscribe((params: Params ) => {
       
       const id = params.id;
-      this.product = this.productService.geProduct(id);
+      this.productService.geProduct(id).subscribe(
+        producto => {
+          this.product = producto;
+        }
+      )
       console.log(this.product);
     });
     
+  }
+  crearProducto(){
+    const newProducto: Product = {
+      id: "111",
+      title: "Remera",
+      image: "assets/images/mug.png",
+      price: 1800,
+      description: "Una hermmosa remera de platzi",
+      
+    };
+    this.productService.createProduct(newProducto).subscribe(
+      producto => {
+        console.log(producto)
+      }
+    )
   }
 
 }
