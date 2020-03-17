@@ -34,6 +34,11 @@ const routes: Routes = [
         component: ProductDetailComponent,
       },
       {
+        path: 'admin',
+      //  // component: HomeComponent,
+        loadChildren: () => import('./aadmin/aadmin.module').then(m => m.AadminModule)
+       },
+      {
         path: 'contact',
         component: ContactComponent,
       },

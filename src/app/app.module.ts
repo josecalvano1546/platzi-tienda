@@ -19,7 +19,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { LayoutComponent } from './layout/layout.component';
 
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import {HttpClientModule} from '@angular/common/http'
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
