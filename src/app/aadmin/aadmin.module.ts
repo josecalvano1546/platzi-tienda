@@ -15,11 +15,23 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { TableComponent } from './components/table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { CargaProductoComponent } from './components/carga-producto/carga-producto.component';
+
+
 
 
 @NgModule({
-  declarations: [FormProductComponent, NavComponent],
+  declarations: [FormProductComponent, NavComponent, DashboardComponent, TableComponent, ProductListComponent, CargaProductoComponent],
   imports: [
+
     CommonModule,
     AadminRoutingModule,
     MatInputModule,
@@ -32,7 +44,12 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class AadminModule { }
