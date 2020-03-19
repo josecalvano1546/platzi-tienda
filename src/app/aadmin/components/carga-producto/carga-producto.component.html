@@ -1,1 +1,17 @@
-<p>carga-producto works!</p>
+<form [formGroup]="form">
+    <mat-form-field>
+        <input formControlName="id" type="text">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input formControlName="title" type="text">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input formControlName="price" type="number">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input formControlName="description" type="text">
+    </mat-form-field>
+</form>
