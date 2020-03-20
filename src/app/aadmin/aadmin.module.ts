@@ -23,13 +23,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ProductListComponent } from './components/product-list/product-list.component';
-import { CargaProductoComponent } from './components/carga-producto/carga-producto.component';
+
 
 
 
 
 @NgModule({
-  declarations: [FormProductComponent, NavComponent, DashboardComponent, TableComponent, ProductListComponent, CargaProductoComponent],
+  declarations: [FormProductComponent, NavComponent, DashboardComponent, TableComponent, ProductListComponent],
   imports: [
 
     CommonModule,
